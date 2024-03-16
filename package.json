@@ -4,20 +4,15 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "npx -p node@$(cat .nvmrc) vite",
+    "dev": "vite",
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "prepare": "husky"
   },
   "lint-staged": {
-    "*": [
-      "prettier --write"
-    ],
-    "src/**/*.{cjs,tsx,md,json,css}": [
-      "eslint",
-      "prettier --write"
-    ]
+    "*": ["prettier --write"],
+    "src/**/*.{cjs,tsx,md,json,css}": ["eslint", "prettier --write"]
   },
   "dependencies": {
     "react": "^18.2.0",

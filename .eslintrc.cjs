@@ -7,10 +7,14 @@ module.exports = {
     'plugin:react/recommended',
     'plugin:react/jsx-runtime',
     'plugin:react-hooks/recommended',
-    'plugin:prettier/recommended'
+    'plugin:prettier/recommended',
   ],
   ignorePatterns: ['dist', '.eslintrc.cjs'],
-  parserOptions: { ecmaVersion: 'latest', sourceType: 'module', ecmaFeatures: { jsx: true } },
+  parserOptions: {
+    ecmaVersion: 'latest',
+    sourceType: 'module',
+    ecmaFeatures: { jsx: true },
+  },
   settings: { react: { version: 'detect' } },
   rules: {
     'react/jsx-no-target-blank': 'off',
@@ -20,6 +24,6 @@ module.exports = {
       'warn',
       { allowConstantExport: true },
     ],
-    'prettier/prettier': 'error'
+    'prettier/prettier': ['error', { endOfLine: 'auto' }],
   },
-}
+};
