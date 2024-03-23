@@ -7,5 +7,6 @@ cd $projectName;
 git init
 git commit -a -m '🎉 Initial commit';
 ```
+line one
 add changes
 more changes
